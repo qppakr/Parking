@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1EFAD44-5B04-4C22-A041-EE08F6EF3417}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Parking</RootNamespace>
+    <AssemblyName>Parking</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dbCars2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbCars2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDash.Designer.cs">
+      <DependentUpon>fmDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usrAddMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrAddMember.Designer.cs">
+      <DependentUpon>usrAddMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrDashboard.Designer.cs">
+      <DependentUpon>usrDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrRecords.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrRecords.Designer.cs">
+      <DependentUpon>usrRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrReports.Designer.cs">
+      <DependentUpon>usrReports.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmDash.resx">
+      <DependentUpon>fmDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="usrDashboard.resx">
+      <DependentUpon>usrDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrRecords.resx">
+      <DependentUpon>usrRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrReports.resx">
+      <DependentUpon>usrReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dbCars2DataSet.xsc">
+      <DependentUpon>dbCars2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbCars2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbCars2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbCars2DataSet.xss">
+      <DependentUpon>dbCars2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locked-padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-5-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conference-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-view-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report-2-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbCars2.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

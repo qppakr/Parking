@@ -1,0 +1,14 @@
+C:\Users\PPARK-PC\source\repos\Parking\Parking\bin\Debug\Parking.exe.config
+C:\Users\PPARK-PC\source\repos\Parking\Parking\bin\Debug\Parking.exe
+C:\Users\PPARK-PC\source\repos\Parking\Parking\bin\Debug\Parking.pdb
+C:\Users\PPARK-PC\source\repos\Parking\Parking\obj\Debug\Parking.Form1.resources
+C:\Users\PPARK-PC\source\repos\Parking\Parking\obj\Debug\Parking.fmDash.resources
+C:\Users\PPARK-PC\source\repos\Parking\Parking\obj\Debug\Parking.Properties.Resources.resources
+C:\Users\PPARK-PC\source\repos\Parking\Parking\obj\Debug\Parking.usrDashboard.resources
+C:\Users\PPARK-PC\source\repos\Parking\Parking\obj\Debug\Parking.csproj.GenerateResource.cache
+C:\Users\PPARK-PC\source\repos\Parking\Parking\obj\Debug\Parking.csproj.CoreCompileInputs.cache
+C:\Users\PPARK-PC\source\repos\Parking\Parking\obj\Debug\Parking.exe
+C:\Users\PPARK-PC\source\repos\Parking\Parking\obj\Debug\Parking.pdb
+C:\Users\PPARK-PC\source\repos\Parking\Parking\bin\Debug\dbCars2.accdb
+C:\Users\PPARK-PC\source\repos\Parking\Parking\obj\Debug\Parking.usrRecords.resources
+C:\Users\PPARK-PC\source\repos\Parking\Parking\obj\Debug\Parking.usrReports.resources
